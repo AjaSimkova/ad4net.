@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonts/OpenSansSemiCondensed-Regular.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-title {
+  color: #095ba8;
+  font-size: 32px;
+  margin: 5px;
+  font-family: "OpenSans";
+}
+h2 {
+  color: black;
+  font-size: 24px;
+  margin: 10px;
+  font-family: "OpenSans";
+}
+
+.offer-h3 {
+  color: #095ba8;
+  margin-top: 2rem;
+  font-family: "OpenSans";
+}
+h4 {
+  text-align: center;
+  color: black;
+  margin-top: 1rem;
+  margin-inline: 10px;
+  font-family: "OpenSans";
+}
+/*******************Navbar********/
+
+.navbar {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #002e56;
+  position: relative;
+}
+.navbar-logo {
+  position: absolute;
+  width: 60rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 12rem;
+}
+.main-photo {
+  background: rgb(220, 227, 227);
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+/**********Main content box*******************************************/
+
+.box-about-section {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(220, 227, 227);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-offer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 2rem;
+  position: relative;
+}
+.box-tender {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-tendet-title {
+  position: absolute;
+}
+.box-tender-title {
+  position: relative;
+  z-index: 1;
+}
+.box-tender-blue {
+  position: absolute;
+  right: 0;
+  width: 28rem;
+  height: 20rem;
+  background: #095ba8;
+  clip-path: polygon(100% 0%, 100% 100%, 60% 100%, 0% 70%);
+}
+.box-tender-title {
+  transform: rotate(-10deg);
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 70%;
+}
+.box-tender-one {
+  position: relative;
+  right: 9.5rem;
+}
+.box-tender-two {
+  transform: rotate(-5deg);
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 70%;
+}
+.flex-end-center {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 90%;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid rgba(169, 166, 166, 0.396);
+}
+/*********************** li *******************/
+li {
+  font-family: "OpenSans";
+}
+
+.box-tender-list {
+  margin: 10px;
+}
+/************************  p  ********************/
+.tender-p {
+  text-align: center;
+  color: white;
+  transform: rotate(-10deg);
+}
+
+.footer-p {
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  color: rgba(128, 128, 128, 0.534);
+}
+/***********************ul******************/
+ul {
+  margin: 10px;
+}
+.footer-logo {
+  width: 7rem;
+}
+/************************************************************************************/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .main-photo,
+  .navbar {
+    width: 100vh;
+  }
+  .main-title {
+    font-size: 26px;
+  }
+  .about-title {
+    font-size: 16px;
+  }
+  .offer-title {
+    margin: 5px;
+  }
+  .box-about-section {
+    width: 100vh;
+  }
+
+  .box-offer,
+  .box-tender {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box-tender-two h4 {
+    text-align: right;
+  }
+  .box-tender-blue {
+    position: relative;
+    right: 4rem;
+  }
+
+  .flex-end-center {
+    display: flex;
+    align-items: end;
+  }
+  .box-tender-title,
+  .tender-p {
+    transform: rotate(5deg);
+    margin: 2px;
+  }
+
+  .box-footer {
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    height: auto;
+  }
+  .footer-logo {
+    width: 4rem;
+    margin-inline: 1rem;
+  }
+  ul {
+    margin: 10px;
+  }
+}
+/*****************************************************************************************/
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .box-about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-title {
+    font-size: 16px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  li {
+    font-size: 13px;
+  }
+  ul {
+    margin: 10px;
+  }
+  .navbar-logo {
+    width: 4rem;
+    margin-top: 1rem;
+  }
+  .navbar {
+    height: 2rem;
+    width: 100%;
+  }
+  .main-photo {
+    width: 100%;
+    height: 100%;
+  }
+  .box-about-section {
+    width: 100%;
+  }
+  .box-tender-one {
+    left: 0;
+  }
+  .box-offer,
+  .box-tender {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-tender-two h4 {
+    text-align: center;
+    font-size: 6px;
+    margin-left: 1rem;
+  }
+  .box-tender-blue {
+    width: auto;
+    margin-top: 1rem;
+    position: relative;
+    bottom: 0.5rem;
+
+    height: 5rem;
+    background: rgb(0, 120, 255);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  }
+  .flex-end-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .box-tender-title,
+  .tender-p {
+    transform: rotate(5deg);
+    font-size: 10px;
+  }
+  .box-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-p {
+    font-size: 6px;
+    margin: 10px;
+  }
+  .footer-logo {
+    width: 2rem;
+  }
+}
