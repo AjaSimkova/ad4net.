@@ -59,6 +59,7 @@ h4 {
 /**********Main content box*******************************************/
 
 .box-about-section {
+  position: relative;
   margin: 0;
   width: 100%;
   background-color: rgb(220, 227, 227);
@@ -69,15 +70,10 @@ h4 {
 }
 
 .box-offer {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: 100%;
   margin: 2rem;
-  position: relative;
-}
-.box-tender {
-  display: flex;
-  flex-direction: row;
 }
 
 .box-tendet-title {
@@ -87,25 +83,7 @@ h4 {
   position: relative;
   z-index: 1;
 }
-.box-tender-blue {
-  position: absolute;
-  right: 0;
-  width: 28rem;
-  height: 20rem;
-  background: #095ba8;
-  clip-path: polygon(100% 0%, 100% 100%, 60% 100%, 0% 70%);
-}
-.box-tender-title {
-  transform: rotate(-10deg);
-  color: white;
-  font-size: 0.9rem;
-  text-align: center;
-  width: 70%;
-}
-.box-tender-one {
-  position: relative;
-  right: 9.5rem;
-}
+
 .box-tender-two {
   transform: rotate(-5deg);
   color: white;
@@ -135,10 +113,14 @@ li {
   margin: 10px;
 }
 /************************  p  ********************/
+.p-offer-blue {
+  margin-top: 1rem;
+}
 .tender-p {
   text-align: center;
   color: white;
-  transform: rotate(-10deg);
+  background-color: #095ba8;
+  padding: 10px;
 }
 
 .footer-p {
@@ -174,26 +156,17 @@ ul {
 
   .box-offer,
   .box-tender {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .box-tender-two h4 {
     text-align: right;
   }
-  .box-tender-blue {
-    position: relative;
-    right: 4rem;
-  }
 
   .flex-end-center {
     display: flex;
     align-items: end;
-  }
-  .box-tender-title,
-  .tender-p {
-    transform: rotate(5deg);
-    margin: 2px;
   }
 
   .box-footer {
@@ -257,13 +230,11 @@ ul {
   .box-about-section {
     width: 100%;
   }
-  .box-tender-one {
-    left: 0;
-  }
+
   .box-offer,
   .box-tender {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .box-tender-two h4 {
@@ -271,26 +242,7 @@ ul {
     font-size: 6px;
     margin-left: 1rem;
   }
-  .box-tender-blue {
-    width: auto;
-    margin-top: 1rem;
-    position: relative;
-    bottom: 0.5rem;
 
-    height: 5rem;
-    background: rgb(0, 120, 255);
-    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
-  }
-  .flex-end-center {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  .box-tender-title,
-  .tender-p {
-    transform: rotate(5deg);
-    font-size: 10px;
-  }
   .box-footer {
     width: 100%;
     display: flex;
